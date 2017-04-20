@@ -72,5 +72,7 @@ skin/frontend/default/german/
 skin/frontend/default/iphone/
 skin/frontend/default/modern/
 skin/install/
-var/
+var/*
 pear
+/var/session
+/var/cache
