@@ -1,0 +1,34 @@
+<config>
+    <modules>
+        <TinyApps_HelloWorld>
+            <version>0.1.0</version>
+        </TinyApps_HelloWorld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>TinyApps_HelloWorld</module>
+                    <!-- this is the url that will trigger the controller to be called -->
+                    <!-- /helloworld/:controller/:action -->
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+        <layout>
+            <updates>
+                <helloworld>
+                    <file>helloworld.xml</file>
+                </helloworld>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <helloworld>
+                <class>TinyApps_HelloWorld_Block</class>
+            </helloworld>
+        </blocks>
+    </global>
+</config>
