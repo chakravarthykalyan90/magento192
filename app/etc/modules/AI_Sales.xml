@@ -1,0 +1,8 @@
+<config>
+  <modules>
+    <AI_Sales>
+      <active>true</active>
+      <codePool>local</codePool>
+    </AI_Sales>
+  </modules>
+</config>

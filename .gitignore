@@ -77,3 +77,12 @@ pear
 /var/session
 /var/cache
 /media
+/.idea/copyright/profiles_settings.xml
+/.idea/deployment.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/magento.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
