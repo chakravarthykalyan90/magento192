@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<sigma_gwp translate="label" module="gwp">
+            <label>Sigma Gift product</label>
+            <sort_order>0</sort_order>
+        </sigma_gwp>
+	  </tabs>
+	  <sections>
+		<sigma_gwp_section  translate="label" module="gwp">                    
+		<label>Gift Product</label>
+		<tab>sigma_gwp</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <sigma_gwp_group translate="label"> 
+					  <label>Gift Product</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <free_gift_sku translate="label">
+                            <label>Free Gift Sku</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enter the SKUs of free gifts allowed</comment>
+                          </free_gift_sku>
+                          <free_gifts_threshold translate="label">
+                            <label>Free Gifts Threshold</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enter number of gifts allowed to add</comment>
+                          </free_gifts_threshold>
+                          <free_gifts_status translate="label">
+                            <label>Status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesnocustom</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enable/Disable Free gifts</comment>
+                          </free_gifts_status>
+					   </fields>
+					   </sigma_gwp_group>
+					</groups>
+		</sigma_gwp_section>
+	  </sections>
+</config>

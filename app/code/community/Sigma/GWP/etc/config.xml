@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Sigma_GWP>
+      <version>0.1.0</version>
+    </Sigma_GWP>
+  </modules>
+  <global>
+    <helpers>
+      <gwp>
+        <class>Sigma_GWP_Helper</class>
+      </gwp>
+    </helpers>
+	<models>
+	  <gwp>
+		<class>Sigma_GWP_Model</class>
+		<resourceModel>gwp_mysql4</resourceModel>
+	  </gwp>
+	</models>
+    <events>
+	  <checkout_cart_product_add_after> <!-- identifier of the event we want to catch -->
+        <observers>
+          <checkout_cart_product_add_after_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>gwp/observer</class> <!-- observers class alias -->
+            <method>AddFreeGift</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </checkout_cart_product_add_after_handler>
+        </observers>
+      </checkout_cart_product_add_after>
+    </events>
+  </global>
+</config> 
